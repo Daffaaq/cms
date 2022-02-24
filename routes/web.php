@@ -67,37 +67,16 @@ Route::prefix('/produk') -> group(function(){
         echo "kolak-kids-songs<br>";
         echo "marbel-edu-games";
     });
-    Route::get("/marbel-edu-games", function(){
-        echo "Menampilkan produk marbel edu games";
-    });
-    Route::get("/marbel-and-friends-kids-games", function(){
-        echo "Menampilkan produk marbel and friends kids games";
-    });
-    Route::get("/riri-story-books", function(){
-        echo "Menampilkan produk riri story books";
-    });
-    Route::get("/kolak-kids-songs", function(){
-        echo "Menampilkan produk kolak kids songs";
-    });
 });
 
 Route::prefix('/news') -> group(function(){
 
     Route::get("", function(){
-        echo "Menampilkan Tab news, berikut ini isi tab news<br><br>";
+        echo "Menampilkan list news, berikut ini isi list news<br><br>";
 
         echo "educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19<br>";
         echo "rpp-paud-tema-air-udara-api-subtema-ciri-dan-manfaat-udara";
     });
-
-    Route::get("/educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19", function(){
-        echo "Menampilkan Berita <br> educa studio berbagi untuk warga sekitar terdampak covid 19";
-    });
-    Route::get("/rpp-paud-tema-air-udara-api-subtema-ciri-dan-manfaat-udara", function(){
-        echo "Menampilkan Berita <br> RPP Tema Air, Udara, Api Subtema Manfaat dan Ciri-Ciri Udara Versi:
-         Marbel, Blended Learning untuk PAUD usia 4-5 dan 5-6 tahun (TK-A dan TK-B)";
-    });
-    
 });
 
 Route::prefix('/program') -> group(function(){
@@ -118,18 +97,6 @@ Route::prefix('/program') -> group(function(){
                 echo "Menampilkan List kunjungan industri";
             });
 });
-// Route::prefix('/program') -> group(function(){
-
-//     Route::get("/karir" , function(){
-//         echo "Menampilkan List karir";
-//     });
-//     Route::get("/magang" , function(){
-//         echo "Menampilkan List magang";
-//     });
-//     Route::get("/kunjungan-industri" , function(){
-//         echo "Menampilkan List kunjungan industri";
-//     });
-// });
 
 Route::get("/about-us" , function(){
         return "
