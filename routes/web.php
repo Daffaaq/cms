@@ -44,63 +44,70 @@ use App\Http\Controllers\ArticleController;
 // Route::get('/articles/{id}', [PageController::class, 'articles']);
 
 //nomer 5
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/about', [AboutController::class, 'about']);
-Route::get('/articles/{id}', [ArticleController::class, 'articles']);
+// Route::get('/', [HomeController::class, 'index']);
+// Route::get('/about', [AboutController::class, 'about']);
+// Route::get('/articles/{id}', [ArticleController::class, 'articles']);
 
 // prak 3
 
 // Route::get('/',[prak3Controller::class,'index']);
 
 
-Route::get('/', function () {
-    return "Welcome to Home Company";
-});
+// Route::get('/', function () {
+//     return "Welcome to Home Company";
+// });
 
 
-Route::prefix('/produk') -> group(function(){
-    Route::get("", function(){
-        echo "Menampilkan isi List Category, isinya sebagai berikut<br><br>";
+// Route::prefix('/produk') -> group(function(){
+//     Route::get("", function(){
+//         echo "Menampilkan isi List Category, isinya sebagai berikut<br><br>";
         
-        echo "marbel-and-friends-kids-games<br> "; 
-        echo "riri-story-books<br>";
-        echo "kolak-kids-songs<br>";
-        echo "marbel-edu-games";
-    });
-});
+//         echo "marbel-and-friends-kids-games<br> "; 
+//         echo "riri-story-books<br>";
+//         echo "kolak-kids-songs<br>";
+//         echo "marbel-edu-games";
+//     });
+// });
 
-Route::prefix('/news') -> group(function(){
+// Route::prefix('/news') -> group(function(){
 
-    Route::get("", function(){
-        echo "Menampilkan list news, berikut ini isi list news<br><br>";
+//     Route::get("", function(){
+//         echo "Menampilkan list news, berikut ini isi list news<br><br>";
 
-        echo "educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19<br>";
-        echo "rpp-paud-tema-air-udara-api-subtema-ciri-dan-manfaat-udara";
-    });
-});
+//         echo "educa-studio-berbagi-untuk-warga-sekitar-terdampak-covid-19<br>";
+//         echo "rpp-paud-tema-air-udara-api-subtema-ciri-dan-manfaat-udara";
+//     });
+// });
 
-Route::prefix('/program') -> group(function(){
-    Route::get("", function(){
-        echo "Menampilkan isi List program, isinya sebagai berikut<br><br>";
+// Route::prefix('/program') -> group(function(){
+//     Route::get("", function(){
+//         echo "Menampilkan isi List program, isinya sebagai berikut<br><br>";
         
-        echo "karir<br> "; 
-        echo "magang<br>";
-        echo "Kunjungan kerja<br>";
-    });
-     Route::get("/karir" , function(){
-            echo "Menampilkan List karir";
-            });
-            Route::get("/magang" , function(){
-                echo "Menampilkan List magang";
-            });
-            Route::get("/kunjungan-industri" , function(){
-                echo "Menampilkan List kunjungan industri";
-            });
-});
+//         echo "karir<br> "; 
+//         echo "magang<br>";
+//         echo "Kunjungan kerja<br>";
+//     });
+//      Route::get("/karir" , function(){
+//             echo "Menampilkan List karir";
+//             });
+//             Route::get("/magang" , function(){
+//                 echo "Menampilkan List magang";
+//             });
+//             Route::get("/kunjungan-industri" , function(){
+//                 echo "Menampilkan List kunjungan industri";
+//             });
+// });
 
-Route::get("/about-us" , function(){
-        return "
-    NIM     : 2041720098 <br>
-    Nama    : Daffa Aqila Rahmatullah <br>
-    Kelas   : TI - 2G";
+// Route::get("/about-us" , function(){
+//         return "
+//     NIM     : 2041720098 <br>
+//     Nama    : Daffa Aqila Rahmatullah <br>
+//     Kelas   : TI - 2G";
+// });
+// Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/home', function(){
+    return view('home');
 });
