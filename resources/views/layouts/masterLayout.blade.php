@@ -28,8 +28,8 @@ http://www.tooplate.com/view/2092-shelf
 </head>
 
     <body>
-        
-        <div class="container">
+        @yield('header')
+        <!-- <div class="container">
             <header class="tm-site-header">
                 <h1 class="tm-site-name">Shelf</h1>
                 <p class="tm-site-description">Your Online Bookstore</p>
@@ -50,7 +50,7 @@ http://www.tooplate.com/view/2092-shelf
                     </div>
                 </nav>
                 
-            </header>
+            </header> -->
             
             @yield('content')
 

@@ -111,3 +111,15 @@ use App\Http\Controllers\ArticleController;
 Route::get('/home', function(){
     return view('home');
 });
+
+Route::get('/contact-us', function(){
+    return view('Contact');
+});
+
+Route::get('/catalogs', function(){
+    return view('Catalogs');
+});
+
+Route::get('/team', function(){
+    return view('OurTeam');
+});
