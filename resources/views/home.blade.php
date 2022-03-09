@@ -53,16 +53,18 @@
                     
                     <div class="tm-gallery">
                         <div class="row">
+                            @foreach($function as $f)
                             <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
                                 <a href="preview.html">
                                     <div class="tm-gallery-item-overlay">
-                                        <img src="img/image-01.jpg" alt="Image" class="img-fluid tm-img-center">
+                                        <img src="img/{{$f->image}}" alt="Image" class="img-fluid tm-img-center">
                                     </div>
                                     
-                                    <p class="tm-figcaption">Nam vitae odio</p>
+                                    <p class="tm-figcaption">{{$f->title}}</p>
                                 </a>
                             </figure>
-                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                            @endforeach
+                            <!-- <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
                                 <a href="preview.html">
                                     <div class="tm-gallery-item-overlay">
                                         <img src="img/image-02.jpg" alt="Image" class="img-fluid tm-img-center">
@@ -117,7 +119,7 @@
                                     </div>
                                     <p class="tm-figcaption">Vivamus facilisis</p>
                                 </a>
-                            </figure> 
+                            </figure>  -->
                         </div>   
                     </div>
                     

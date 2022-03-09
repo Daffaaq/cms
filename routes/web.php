@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -108,18 +109,20 @@ use App\Http\Controllers\ArticleController;
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', function(){
-    return view('home');
-});
+// Route::get('/home', function(){
+//     return view('home');
+// });
 
-Route::get('/contact-us', function(){
-    return view('Contact');
-});
+// Route::get('/contact-us', function(){
+//     return view('Contact');
+// });
 
-Route::get('/catalogs', function(){
-    return view('Catalogs');
-});
+// Route::get('/catalogs', function(){
+//     return view('Catalogs');
+// });
 
-Route::get('/team', function(){
-    return view('OurTeam');
-});
+// Route::get('/team', function(){
+//     return view('OurTeam');
+// });
+
+Route::get('/',[PostController::class, 'index']);
