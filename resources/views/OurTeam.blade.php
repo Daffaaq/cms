@@ -1,6 +1,6 @@
 @extends('layouts.masterLayout')
 
-@section('header')
+<!-- @section('header')
 <div class="container">
             <header class="tm-site-header">
                 <h1 class="tm-site-name">Shelf</h1>
@@ -22,7 +22,7 @@
                     </div>
                 </nav>
                 
-            </header>
+            </header> -->
 @section('content')
 <div class="tm-main-content">                    
                 <section class="row tm-item-preview tm-margin-b-xl">

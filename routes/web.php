@@ -125,4 +125,14 @@ use App\Http\Controllers\PostController;
 //     return view('OurTeam');
 // });
 
+// Route::get('/',[PostController::class, 'index']);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
 Route::get('/',[PostController::class, 'index']);
+// Route::get('/Catalogs',[PostController::class, 'Catalogs']);
+Route::get('/Catalogs',[PostController::class, 'Catalogs']);
+Route::get('/team',[PostController::class, 'OurTeam']);
+Route::get('/contact',[PostController::class, 'Contact']);
+
