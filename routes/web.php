@@ -4,9 +4,10 @@ use Illuminate\Support\Facades\Route;
 // use App\Http\Controllers\PageController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ArticleController;
 
+Route::resource('articles', ArticleController::class);
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -126,13 +127,14 @@ use App\Http\Controllers\PostController;
 // });
 
 // Route::get('/',[PostController::class, 'index']);
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/',[PostController::class, 'index']);
+// Route::get('/',[PostController::class, 'index']);
+// // Route::get('/Catalogs',[PostController::class, 'Catalogs']);
 // Route::get('/Catalogs',[PostController::class, 'Catalogs']);
-Route::get('/Catalogs',[PostController::class, 'Catalogs']);
-Route::get('/team',[PostController::class, 'OurTeam']);
-Route::get('/contact',[PostController::class, 'Contact']);
+// Route::get('/team',[PostController::class, 'OurTeam']);
+// Route::get('/contact',[PostController::class, 'Contact']);
+
 

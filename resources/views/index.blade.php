@@ -55,7 +55,7 @@
                 
             </header>
 @section('content')
-<!-- <div class="container">
+<div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -71,7 +71,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
 <div class="tm-main-content">
                 <section class="tm-margin-b-l">
                     <header>
@@ -93,7 +93,7 @@
                                 </a>
                             </figure>
                             @endforeach
-                            <!-- <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                            <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
                                 <a href="preview.html">
                                     <div class="tm-gallery-item-overlay">
                                         <img src="img/image-02.jpg" alt="Image" class="img-fluid tm-img-center">
@@ -148,7 +148,7 @@
                                     </div>
                                     <p class="tm-figcaption">Vivamus facilisis</p>
                                 </a>
-                            </figure>  -->
+                            </figure>
                         </div>   
                     </div>
                     
