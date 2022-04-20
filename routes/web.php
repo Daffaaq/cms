@@ -8,6 +8,8 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ArticleController;
 
 Route::resource('articles', ArticleController::class);
+
+Route::get('/artikel/cetak.pdf', [ArticleController::class,'cetak_pdf'])->name('cetak_pdf');
 /*
 |--------------------------------------------------------------------------
 | Web Routes
